@@ -27,7 +27,7 @@ public class TestController {
 	@Resource
 	private TestService testService;
 	
-	@RequestMapping(value = "/test.do")
+	@RequestMapping(value = "test.do")
 	public String test(Model model) {
 		System.out.println("进入Controller控制层");
 		List<Test> test = testService.findAll();

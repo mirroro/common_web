@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/AdminController")
 public class AdminController {
 
-	@RequestMapping(value = "/adminPage.do")
+	@RequestMapping(value = "adminPage.do")
 	public String adminPage(){
 		System.out.println("进入后台");
 		return "admin";
