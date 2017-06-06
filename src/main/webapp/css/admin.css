@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-* {
+*{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -14,54 +14,28 @@ body {
 	font-size: 13px;
 }
 /*--------自定义链接颜色(可选)--------*/
+/*--------链接-颜色--------*/
 a {
 	color: #333;
 	text-decoration: none;
-} /*链接-颜色*/
+} 
+
+/*--------链接-悬浮颜色--------*/
 a:focus, a:hover {
 	color: #0ae;
-} /*链接-悬浮颜色*/
-.menu {
-	width: 180px;
-	height: 100%;
-	position: fixed;
-	top: 70px;
-	left: 0px;
-}
-
-.menu-title {
-	height: 50px;
-	background: url(../images/3.jpg) no-repeat 0 -1000px;
-	color: #FFF;
-	padding-left: 22px;
-	font-size: 14px;
-	line-height: 50px;
-}
-
-.top-logo-image {
-	border-radius: 50%;
 }
 
 .top {
 	height: 70px;
 	overflow: hidden;
-	background: url(../images/3.jpg) no-repeat 0 -1000px;
+	background: url(../images/bg01.jpg) no-repeat 0 -1000px;
 }
 
-.top-page {
-	float: left;
-	margin-top: 17px;
-	margin-left: 15px;
+.top-logo {
+	border-radius: 50%;
 }
 
-.top-page {
-	padding: 8px 15px;
-}
-
-.top-page .bg-blue:hover {
-	background-color: #03b6fd;
-}
-
+/*--------菜单样式--------*/
 .menu {
 	width: 180px;
 	height: 100%;
@@ -72,7 +46,7 @@ a:focus, a:hover {
 
 .menu-title {
 	height: 50px;
-	background: url(../images/3.jpg) no-repeat 0 -1000px;
+	background: url(../images/bg01.jpg) no-repeat 0 -1000px;
 	color: #FFF;
 	padding-left: 22px;
 	font-size: 14px;
@@ -95,10 +69,6 @@ a:focus, a:hover {
 
 .menu h2.on {
 	color: #09c;
-}
-
-.menu .border-bottom {
-	border-bottom: 1px solid #b5cfd9;
 }
 
 .menu h2 span {
@@ -134,7 +104,10 @@ a:focus, a:hover {
 	color: #09c;
 }
 
-.home {
+/*--------语言切换--------*/
+.language {
+	margin-left: 190px;
+	margin-top: 4px;
 	border-radius: 4px;
 	padding: 8px 15px;
 	font-size: 12px;
@@ -142,21 +115,23 @@ a:focus, a:hover {
 	color: #999;
 }
 
-.home li {
+.language li {
+	float: left;
 	display: inline-block;
 }
 
-.home li:after {
+.language li:after {
 	content: "\002f";
 	padding: 0 8px;
 	color: #ddd;
 }
 
-.home li:last-child:after {
+.language li:last-child:after {
 	content: "";
 }
 
-.admin {
+/*--------主页面--------*/
+.home {
 	background: #fff;
 	position: fixed;
 	border-left: solid 1px #b5cfd9;
@@ -172,31 +147,7 @@ a:focus, a:hover {
 	padding-right: 15px;
 }
 
-.logo {
-	float: left;
-	color: #FFF;
-	margin-top: 10px;
-	line-height: 45px;
-}
-
-.logo img {
-	float: left;
-	margin-right: 10px;
-}
-
-.home {
-	margin-left: 190px;
-	margin-top: 4px;
-}
-
-.home li {
-	float: left;
-}
-
-.top-page {
-	color: #fff;
-}
-
+/*--------用户头像旋转样式设置--------*/
 img.userImage {
 	border-radius: 50%;
 	-webkit-animation: 2s infinite linear;
@@ -212,46 +163,7 @@ img.userImage:hover {
 	animation-name: a-rotate
 }
 
-@
--webkit-keyframes a-rotate { 0%{
-	-webkit-transform: rotate(0deg);
-}
-
-100%{
--webkit-transform
-:rotate(359deg)
-;
-}
-}
-@
--moz-keyframes a-rotate { 0%{
-	-moz-transform: rotate(0deg);
-}
-
-100%{
--moz-transform
-:rotate(359deg)
-;
-}
-}
-@
--ms-keyframes a-rotate { 0%{
-	-ms-transform: rotate(0deg);
-}
-
-100%{
--ms-transform
-:rotate(359deg)
-;
-}
-}
-@
-keyframes a-rotate { 0%{
-	transform: rotate(0deg);
-}
-100%{
-transform
-:rotate(359deg)
-;
-}
-}
+@-webkit-keyframes a-rotate{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(359deg);}}
+@-moz-keyframes a-rotate{0%{-moz-transform:rotate(0deg);}100%{-moz-transform:rotate(359deg);}}
+@-ms-keyframes a-rotate{0%{-ms-transform:rotate(0deg);}100%{-ms-transform:rotate(359deg);}}
+@keyframes a-rotate{0%{transform:rotate(0deg);}100%{transform:rotate(359deg);}}
